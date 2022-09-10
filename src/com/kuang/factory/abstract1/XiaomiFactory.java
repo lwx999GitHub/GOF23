@@ -10,4 +10,9 @@ public class XiaomiFactory implements IProductFactory{
     public IrouterProduct irouterProduct() {
         return new XiaomiRouter();
     }
+
+    @Override
+    public INoteBookProduct noteBookProduct() {
+        return new XiaomiNoteBook();
+    }
 }

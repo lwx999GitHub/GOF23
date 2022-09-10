@@ -10,4 +10,9 @@ public class HuaweiFactory implements IProductFactory{
     public IrouterProduct irouterProduct() {
         return new HuaweiRouter();
     }
+
+    @Override
+    public INoteBookProduct noteBookProduct() {
+        return new HuaweiNoteBook();
+    }
 }

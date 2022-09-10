@@ -8,10 +8,16 @@ public class Client {
         IphoneProductXiaomi.callup();//小米工厂手机打电话
         IphoneProductXiaomi.sendSms();//小米工厂手机发信息
 
+       INoteBookProduct iNoteBookProductXiaomi= xiaomiFactory.noteBookProduct();
+        iNoteBookProductXiaomi.program();//小米笔记本
+
         HuaweiFactory huaweiFactory=new HuaweiFactory();//华为工厂
         IphoneProduct iProductFactoryHuawei=huaweiFactory.iphoneProduct();//华为工厂生产的手机
+        INoteBookProduct iNoteBookProductHuawei=huaweiFactory.noteBookProduct();//华为工厂生产的手机
+
         System.out.println("===========华为手机==========");
         iProductFactoryHuawei.callup();//华为工厂手机打电话
         iProductFactoryHuawei.sendSms();//华为工厂手机发短信
+        iNoteBookProductHuawei.program();//华为笔记本
     }
 }
